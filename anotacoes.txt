@@ -4,5 +4,5 @@ Se tiver grande chances de chover na sua cidade, irá enviar um @everyone avisan
 
 Bibliotecas que serão utilizadas:
     Discord.py
-    asyncio
-    logging (fazer um decorator para facilitar)
+    asyncio (lib discord.py já importa)
+    logging (fazer um decorator para facilitar; lib do discord.py já proporciona isso)
