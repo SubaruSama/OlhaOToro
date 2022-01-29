@@ -1,5 +1,0 @@
-class ToroBot():
-    """Classe do Bot."""
-
-    def __init__(self) -> None:
-        pass
