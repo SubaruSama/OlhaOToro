@@ -1,0 +1,8 @@
+Bot de Discord que será possível ver se vai chover na sua cidade, e também ver temperaturas no geral.
+A API para pegar os dados do tempo vai ser do OpenWeather.
+Se tiver grande chances de chover na sua cidade, irá enviar um @everyone avisando para não esquecer o seu guarda-chuva
+
+Bibliotecas que serão utilizadas:
+    Discord.py
+    asyncio
+    logging
