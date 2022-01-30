@@ -1,2 +1,2 @@
 discord.py
-urllib3
+requests
