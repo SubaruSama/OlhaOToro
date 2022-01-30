@@ -11,7 +11,7 @@ Bibliotecas que serão utilizadas:
 Discord:
     1. Conectar o bot
     2. Deixar ele escutando comandos que vão ser enviados pra ele, esta parte só termina quando o bot for desligado
-    3. Se o comando começar com $tempo, retorna os dados do tempo atual
+    3. Se o comando começar com $vai_chover, retorna os dados do tempo atual
 
 OpenWeather:
     Esta parte não terá interação com os comandos enviados pelo Discord, apenas será utilizando quando no JSON retornado

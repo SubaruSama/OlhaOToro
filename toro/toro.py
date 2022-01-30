@@ -9,7 +9,7 @@ class ToroBot(discord.Client):
     métodos e atributos que facilitam na hora de interagir
     com o WebSockets e API do Discord
     """
-    bot_name = 'Toro'
+    bot_name = 'Toró'
     version = 0.1
     author = 'r0se / SubaruSama'
 
@@ -28,8 +28,8 @@ class ToroBot(discord.Client):
         Método herdado da classe discord.Client
         Será chamado quando um model Message é criado e enviado.
         """
-        if message.content.startswith('$tempo'): # TODO: Existe o discord.ext.commands, decorators que ajudam no parse. Utilizar depois
-            await message.channel.send('Nao sei')
+        if message.content.startswith('$vai_chover'): # TODO: Existe o discord.ext.commands, decorators que ajudam no parse. Utilizar depois
+            await message.channel.send('Não sei')
 
     async def on_ready(self) -> None:
         """
@@ -37,6 +37,9 @@ class ToroBot(discord.Client):
         Para debug apenas.
         """
         print(f'Logado como {self.user}')
+        print(f'Nome do bot: {self.bot_name}')
+        print(f'Versão: {self.version}')
+        print(f'Desenvolvido por: {self.author}')
 
     def notify_all(self):
         """
