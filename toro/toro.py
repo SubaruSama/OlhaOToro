@@ -41,23 +41,6 @@ class ToroBot(discord.Client):
         print(f'Versão: {self.version}')
         print(f'Desenvolvido por: {self.author}')
 
-    def notify_all(self):
-        """
-        Método para enviar um @everyone avisando para não esquecer o
-        guarda chuva.
-        """
-        pass
-
-    # OpeanWeather stuff
-    def it_will_rain_automatic(self, contents: str) -> None:
-        """
-        Método que decide se irá chover ou não. Caso true, chama notify_all(). Caso false, faz nada.
-        """
-        if contents["weather"][0]["main"] != "Clear":
-            self.notify_all()
-        else:
-            pass
-
     def get_weather(self) -> any:
         """
         Método que pega os dados do OpenWeather.
@@ -66,7 +49,6 @@ class ToroBot(discord.Client):
             Preencher as variáveis com os valores recebidos do json e envia para o it_will_rain, método que responde quando o comando é enviado.
         """
         response = requests.request('GET', self.url).json()
-        # self.it_will_rain_automatic(response)
         
         temp = response["main"]["temp"]
         temp_max = response["main"]["temp_max"]
