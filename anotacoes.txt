@@ -21,5 +21,5 @@ OpenWeather:
         2.1 Chama o notify_all()
         2.2 Senão, faz nada
 
-[ X ]Terminar primeiro quando receber valor do Discord. DONE
+[ X ] Terminar primeiro quando receber valor do Discord. DONE
 Deixar o avisar todos automaticamente mais pra frente.
