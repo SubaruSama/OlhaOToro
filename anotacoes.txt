@@ -6,3 +6,17 @@ Bibliotecas que serão utilizadas:
     Discord.py
     asyncio (lib discord.py já importa)
     logging (fazer um decorator para facilitar; lib do discord.py já proporciona isso)
+
+
+Discord:
+    1. Conectar o bot
+    2. Deixar ele escutando comandos que vão ser enviados pra ele, esta parte só termina quando o bot for desligado
+    3. Se o comando começar com $tempo, retorna os dados do tempo atual
+
+OpenWeather:
+    Esta parte não terá interação com os comandos enviados pelo Discord, apenas será utilizando quando no JSON retornado
+        pela API do OpenWeather indicar chuva.
+    1. Cron irá rodar a cada 30 min
+    2. SE no JSON tiver indicação de chuva:
+        2.1 Chama o notify_all()
+        2.2 Senão, faz nada
